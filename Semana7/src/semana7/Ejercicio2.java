@@ -3,28 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package clase5;
+package semana7;
+
+import java.util.Scanner;
 
 /**
  *
  * @author leona
  */
-public class Clase5 {
-
-    /**
-     * @param args the command line arguments
-     */
+public class Ejercicio2 {
     public static void main(String[] args) {
         // TODO code application logic here
+    Scanner entrada = new Scanner(System.in);
     int suma = 0;
-    int contador = 1;
-    System.out.printf("%s\t%s\n","Contador","Suma");
-    while(contador <= 4){
+    for (int contador =2; contador <= 20; contador +=2){
         suma = suma + contador;
-        System.out.printf("%d\t\t%d\n", contador, suma);
-        contador = contador + 1;
+        System.out.printf("%d, ",contador);
     }
-    
-    }
-    
+    System.out.printf("\n%s%d","La suma es de: ",suma);
+}
 }
